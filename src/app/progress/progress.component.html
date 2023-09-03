@@ -1,0 +1,9 @@
+<div class="skill-item">
+  <span>{{ skill.name }}</span>
+  <div class="progress" role="progressbar">
+    <div
+      class="progress-bar bg-secondary"
+      [ngStyle]="{ width: skill.percent }"
+    ></div>
+  </div>
+</div>

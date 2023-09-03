@@ -1,0 +1,26 @@
+<div class="skills-container">
+  <div class="container p-4">
+    <h2 class="text-center text-white">Skills</h2>
+    <p class="text-center">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque unde
+      temporibus ad consequatur, accusamus, officia natus, in fugiat voluptatum
+      tenetur consequuntur quis incidunt delectus corrupti qui rerum laudantium?
+      Architecto, tenetur!
+    </p>
+
+    <div class="row mt-5">
+      <div class="col-12 col-md-3 left-side">
+        <p class="text-uppercase text-center border-bottom pb-2">My Focus</p>
+        <ul class="list-unstyled">
+          <li *ngFor="let item of myFocus">{{ item }}</li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-9">
+        <app-progress
+          *ngFor="let skill of skills"
+          [skill]="skill"
+        ></app-progress>
+      </div>
+    </div>
+  </div>
+</div>

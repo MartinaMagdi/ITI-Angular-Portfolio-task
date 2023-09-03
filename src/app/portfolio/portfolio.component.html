@@ -1,0 +1,12 @@
+<div class="container p-4 mt-4">
+  <h2 class="mb-5">Portfolio</h2>
+
+  <div class="items">
+    <div class="rows">
+      <app-portfolio-card
+        *ngFor="let item of portfolioItems"
+        [item]="item"
+      ></app-portfolio-card>
+    </div>
+  </div>
+</div>
